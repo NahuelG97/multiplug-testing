@@ -351,34 +351,10 @@ const Queries = () => {
                                             <h5 className="mb-0 card-title flex-grow-1"></h5>
                                             <div className="flex-shrink-0">
                                                 <Button
-                                                    onClick={toggleGraphic}
-                                                    className="btn btn-primary me-1"
-                                                >
-                                                    Graphic
-                                                </Button>
-                                                <Button
                                                     onClick={toggleRightCanvas}
                                                     className="btn btn-primary me-1"
                                                 >
                                                     Filters
-                                                </Button>
-                                                <Button
-                                                    onClick={toggle}
-                                                    className="btn btn-success me-1"
-                                                >
-                                                    New
-                                                </Button>
-                                                <Button
-                                                    onClick={toggle}
-                                                    className="btn btn-success me-1"
-                                                >
-                                                    Update
-                                                </Button>
-                                                <Button
-                                                    onClick={toggle}
-                                                    className="btn btn-danger me-1"
-                                                >
-                                                    Delete
                                                 </Button>
                                                 <Button
                                                     className="btn btn-light me-1"
@@ -394,15 +370,16 @@ const Queries = () => {
                                                     </DropdownToggle>
                                                     <DropdownMenu>
                                                         <li>
-                                                            <DropdownItem href="#">Action</DropdownItem>
+                                                            <DropdownItem>New</DropdownItem>
                                                         </li>
                                                         <li>
-                                                            <DropdownItem href="#">Another action</DropdownItem>
+                                                            <DropdownItem>Update</DropdownItem>
                                                         </li>
                                                         <li>
-                                                            <DropdownItem href="#">
-                                                                Something else here
-                                                            </DropdownItem>
+                                                            <DropdownItem>Delete</DropdownItem>
+                                                        </li>
+                                                        <li>
+                                                            <DropdownItem onClick={toggleGraphic}>Graphic</DropdownItem>
                                                         </li>
                                                     </DropdownMenu>
                                                 </UncontrolledDropdown>
